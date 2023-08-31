@@ -16,7 +16,9 @@ struct DetailView: View {
                 .font(.subheadline)
                 .fontWeight(.bold)
                 .foregroundColor(.blue)
-            Text(comment.body).font(.callout)
+            Text(comment.body)
+                .font(.callout)
+                .titleStyle()
             Spacer()
         }.padding()
     }
