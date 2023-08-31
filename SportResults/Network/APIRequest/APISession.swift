@@ -48,7 +48,7 @@ struct APISession: APISessionProtocol {
           return APIError.unknown(description: error.localizedDescription)
         }
       }
-      .receive(on: DispatchQueue.main)
+      .receive(on: RunLoop.main)
       .eraseToAnyPublisher()
   }
 }

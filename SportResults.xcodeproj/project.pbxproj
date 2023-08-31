@@ -57,7 +57,7 @@
 		2D78E40A27265A0E004F7A01 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		2D78E40C27267936004F7A01 /* Dictionary+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Utilities.swift"; sourceTree = "<group>"; };
 		2D906FA12723492C008ACB91 /* SportResults.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportResults.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D906FA82723492E008ACB91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D906FA82723492E008ACB91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		2D906FAB2723492E008ACB91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2D906FB12723492E008ACB91 /* SportResultsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportResultsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D906FBB2723492E008ACB91 /* SportResultsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportResultsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,11 +130,10 @@
 		2D906FA32723492C008ACB91 /* SportResults */ = {
 			isa = PBXGroup;
 			children = (
-				2D906FF427234D2D008ACB91 /* Utilities */,
 				2D906FCE2723493D008ACB91 /* Network */,
 				2D906FE327234976008ACB91 /* Features */,
-				2D906FA82723492E008ACB91 /* Assets.xcassets */,
 				2D906FEF27234994008ACB91 /* Resources */,
+				2D906FF427234D2D008ACB91 /* Utilities */,
 				2D906FAA2723492E008ACB91 /* Preview Content */,
 			);
 			path = SportResults;
@@ -252,6 +251,7 @@
 		2D906FEF27234994008ACB91 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D906FA82723492E008ACB91 /* Assets.xcassets */,
 				2D906FF027234994008ACB91 /* sampleResults.json */,
 				2D906FF127234994008ACB91 /* Placeholder.swift */,
 			);
