@@ -16,9 +16,8 @@
 
 
 
-Sample App structure and Data flow
+## Sample App structure and Data flow
 
-SportsViewModel: ViewModel
 1. The network folder has all related classes for making API calls and Services. our view model directly communicates with services. in order to access service every viewModel has to implement a designated service protocol
 Ex. ViewModel Implement SportsResultProtocol for making API calls and Loadable Protocol is responsible for loading results by states(loading, loaded, failed)
 2. View is just responsible for observing the property wrapper(@Published) we have in ViewModel
