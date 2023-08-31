@@ -1,14 +1,7 @@
-# SportResults
-
-First of all, thank you so much for giving me the opportunity to work on this challenge. I enjoyed spending time on it. 
-
-1. According to the question it did not mention anything about the language that’s why I picked SwiftUI. Although I could have done the same thing using UIKit. 
-2. I used MVVM architecture and build a custom extendable API layer for new request
-3. Here I have SportInfoProtocol for the abstraction of the sports and a SportModel enum I am using to access the real object as it might be different for each Sports result. So every sport has to implement SportInfoProtocol
-
+# MVVM architecture
 
 SportsViewModel: ViewModel
-1. ViewModel Implement SportsResultProtocol for making API call and Loadable for loading results by states(loading, loaded, failed)
+1. ViewModel Implement SportsResultProtocol for making API call and Loadable Protocol is responsible for loading results by states(loading, loaded, failed)
 2. After getting the results I am sorting them by date right away before loading the results to UI. The most recent result on top
 
 
