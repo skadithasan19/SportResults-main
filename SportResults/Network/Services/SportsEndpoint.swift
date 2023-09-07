@@ -9,7 +9,9 @@ import Foundation
 
 enum SportsEndpoint {
     case sportsResult
+    case allUsers
     case sportsComments(String)
+    case sportsPosts(String)
 }
 
 extension SportsEndpoint: RequestBuilder {
@@ -21,8 +23,20 @@ extension SportsEndpoint: RequestBuilder {
             request.httpMethod = "GET"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             return request
-        case .sportsComments(let commentID):
-            guard let url = URL(string: URLs.contentURL + "\(commentID)") else { preconditionFailure("Invalid URL format") }
+        case .allUsers:
+            guard let url = URL(string: URLs.usersURL) else { preconditionFailure("Invalid URL format") }
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            return request
+        case .sportsComments(let postId):
+            guard let url = URL(string: URLs.commentsByPostsURL + "\(postId)") else { preconditionFailure("Invalid URL format") }
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            return request
+        case .sportsPosts(let userID):
+            guard let url = URL(string: URLs.postsByUserURL + "\(userID)") else { preconditionFailure("Invalid URL format") }
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
