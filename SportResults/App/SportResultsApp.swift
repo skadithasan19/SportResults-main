@@ -11,7 +11,8 @@ import SwiftUI
 struct SportResultsApp: App {
     var body: some Scene {
         WindowGroup {
-          LandingPage()
+            WrappedView()
+          //LandingPage()
         }
     }
 }
